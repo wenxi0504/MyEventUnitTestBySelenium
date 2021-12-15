@@ -43,7 +43,8 @@ namespace MyEventTest
             actions.MoveToElement(signupBtn).Click().Perform();
             Thread.Sleep(1000);
             IWebElement e3 = driver.FindElement(By.XPath("//h3"));
-            Assert.AreEqual(e3.Text, "Create Your Account");
+            Assert.AreEqual( "Create Your Account",e3.Text);
+            Thread.Sleep(1000);
         }
 
 

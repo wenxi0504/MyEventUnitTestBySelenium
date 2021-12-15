@@ -31,7 +31,7 @@ namespace MyEventTest
             Thread.Sleep(1000);
             IWebElement e2 = driver.FindElement(By.XPath("//h1"));
             Thread.Sleep(1000);
-            Assert.AreEqual(e2.Text, "Sign In");
+            Assert.AreEqual( "Sign In", e2.Text);
             Thread.Sleep(1000);
         }
 
