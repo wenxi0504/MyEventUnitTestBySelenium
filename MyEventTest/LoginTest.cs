@@ -19,6 +19,7 @@ namespace MyEventTest
         }
 
         [Test]
+        //test login in button when user input username and password
         public void Login()
         {
             driver.Navigate().GoToUrl("https://me-myevent.herokuapp.com/login");
@@ -27,6 +28,8 @@ namespace MyEventTest
             e1.SendKeys("egor");
             Thread.Sleep(1000);
             driver.FindElement(By.Name("password")).SendKeys("egor"+ Keys.PageDown);
+            // failed case
+            // driver.FindElement(By.Name("password")).SendKeys("admin"+ Keys.PageDown);
             Thread.Sleep(1000);
             IWebElement btnSignIn = driver.FindElement(By.Id("btnSignIn"));
             Thread.Sleep(1000);
@@ -34,7 +37,7 @@ namespace MyEventTest
             actions.MoveToElement(btnSignIn).Click().Perform();
             Thread.Sleep(1000);
             IWebElement e2 = driver.FindElement(By.XPath("//h1"));
-            Assert.AreEqual(e2.Text, "Welcome to MyEvent");
+            Assert.AreEqual("Welcome to MyEvent", e2.Text);
         }
 
 
