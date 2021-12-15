@@ -4198,11 +4198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sophie\\source\\repos\\MyEventTest\\MyEventTest\\MyEventTest.csproj",
+      "projectUniqueName": "C:\\Users\\Sophie\\OneDrive\\桌面\\MyEventUnitTestBySelenium\\MyEventTest\\MyEventTest.csproj",
       "projectName": "MyEventTest",
-      "projectPath": "C:\\Users\\Sophie\\source\\repos\\MyEventTest\\MyEventTest\\MyEventTest.csproj",
+      "projectPath": "C:\\Users\\Sophie\\OneDrive\\桌面\\MyEventUnitTestBySelenium\\MyEventTest\\MyEventTest.csproj",
       "packagesPath": "C:\\Users\\Sophie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sophie\\source\\repos\\MyEventTest\\MyEventTest\\obj\\",
+      "outputPath": "C:\\Users\\Sophie\\OneDrive\\桌面\\MyEventUnitTestBySelenium\\MyEventTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

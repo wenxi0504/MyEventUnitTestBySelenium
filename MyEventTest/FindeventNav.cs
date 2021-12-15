@@ -9,7 +9,7 @@ using OpenQA.Selenium.Interactions;
 
 namespace MyEventTest
 {
-    class Test3Unfinished
+    class FindeventNav
     {
         IWebDriver driver;
         [SetUp]
@@ -19,23 +19,20 @@ namespace MyEventTest
         }
 
         [Test]
-        public void Login()
+        // test the click findEvents Nav when the user is not login 
+        public void ClickFindEventNav()
         {
-            driver.Navigate().GoToUrl("https://me-myevent.herokuapp.com/login");
+            driver.Navigate().GoToUrl("https://me-myevent.herokuapp.com");
             driver.Manage().Window.Maximize();
-            IWebElement e1 = driver.FindElement(By.Name("username"));
-            e1.SendKeys("admin");
-            Thread.Sleep(1000);
-            driver.FindElement(By.Name("password")).SendKeys("egor"+ Keys.PageDown);
-            Thread.Sleep(1000);
-            IWebElement btnSignIn = driver.FindElement(By.Id("btnSignIn"));
-            Thread.Sleep(1000);
-            //btnSignIn.Click();
+            Thread.Sleep(500);
+            IWebElement e1 = driver.FindElement(By.Id("findevents"));
             Actions actions = new Actions(driver);
-            actions.MoveToElement(btnSignIn).Click().Perform();
+            actions.MoveToElement(e1).Click().Perform();
             Thread.Sleep(1000);
             IWebElement e2 = driver.FindElement(By.XPath("//h1"));
-            Assert.AreEqual(e2.Text, "Welcome to MyEvent");
+            Thread.Sleep(1000);
+            Assert.AreEqual(e2.Text, "Sign In");
+            Thread.Sleep(1000);
         }
 
 

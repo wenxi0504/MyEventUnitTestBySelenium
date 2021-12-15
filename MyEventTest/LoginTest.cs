@@ -30,7 +30,6 @@ namespace MyEventTest
             Thread.Sleep(1000);
             IWebElement btnSignIn = driver.FindElement(By.Id("btnSignIn"));
             Thread.Sleep(1000);
-            //btnSignIn.Click();
             Actions actions = new Actions(driver);
             actions.MoveToElement(btnSignIn).Click().Perform();
             Thread.Sleep(1000);

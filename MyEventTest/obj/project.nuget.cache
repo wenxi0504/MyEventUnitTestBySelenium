@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5gpHM035E5PwlTia4pTMIIl9ZsTmSuN48Ajdhh8zPt/OBU7zfORvtIif1JqVPyp97yQ0nfL5/o0qPjrFRzWZaA==",
+  "dgSpecHash": "ghWDF0yyD0IqJyrH5n94S9fmEZzxOalTqPhJuo64dDyNWVB75/rBAWUEuyOZ47rLzh8vEPc7YFsG8lwhhXvBiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sophie\\source\\repos\\MyEventTest\\MyEventTest\\MyEventTest.csproj",
+  "projectFilePath": "C:\\Users\\Sophie\\OneDrive\\桌面\\MyEventUnitTestBySelenium\\MyEventTest\\MyEventTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sophie\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
     "C:\\Users\\Sophie\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
