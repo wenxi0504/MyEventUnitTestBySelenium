@@ -46,7 +46,7 @@ namespace MyEventTest
             ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", btnReadMore[4]);
             Thread.Sleep(5000);
             Actions actions1 = new Actions(driver);
-            actions1.MoveToElement(btnReadMore[8]).Click().Perform();
+            actions1.MoveToElement(btnReadMore[4]).Click().Perform();
             //btnReadMore[0].Click();
             Thread.Sleep(500);
             IWebElement e2 = driver.FindElement(By.XPath("//h1"));
