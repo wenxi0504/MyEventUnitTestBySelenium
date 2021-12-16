@@ -43,15 +43,17 @@ namespace MyEventTest
             IReadOnlyCollection<IWebElement> readmorelist =driver.FindElements(By.Id("readmore"));
             Thread.Sleep(500);
             List<IWebElement> btnReadMore = new List<IWebElement>(readmorelist);
-            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", btnReadMore[3]);
+            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", btnReadMore[4]);
             Thread.Sleep(5000);
             Actions actions1 = new Actions(driver);
-            actions1.MoveToElement(btnReadMore[1]).Click().Perform();
-            Thread.Sleep(1000);
+            actions1.MoveToElement(btnReadMore[8]).Click().Perform();
+            //btnReadMore[0].Click();
+            Thread.Sleep(500);
             IWebElement e2 = driver.FindElement(By.XPath("//h1"));
-            Assert.AreEqual(e2.Text, "Find Event detail");
+            Assert.AreEqual( "Find Event detail", e2.Text);
+            Thread.Sleep(5000);
 
-           
+
         }
 
 

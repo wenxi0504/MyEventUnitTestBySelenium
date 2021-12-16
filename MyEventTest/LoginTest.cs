@@ -38,6 +38,7 @@ namespace MyEventTest
             Thread.Sleep(1000);
             IWebElement e2 = driver.FindElement(By.XPath("//h1"));
             Assert.AreEqual("Welcome to MyEvent", e2.Text);
+            Thread.Sleep(1000);
         }
 
 
